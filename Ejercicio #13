@@ -1,0 +1,39 @@
+Ejercicio #13
+
+Algoritmo MenuSumaDivision
+	
+	Definir n1,n2,r Como Real
+	Definir operacion Como Caracter
+	Definir opc Como Entero
+	
+	Escribir '&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
+	Escribir '====>   Calculadora V1   <===='
+	Escribir '&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&'
+	Escribir ''
+	
+	Escribir 'Opciones disponibles: ' 
+	Escribir '1.Sumar'
+	Escribir '2,Dividir'
+	leer opc
+	Borrar Pantalla
+	Escribir 'Ingrese el primer numero'
+	leer n1
+	Escribir  'Ingrese el segundo numero'
+	leer n2
+	
+	si(opc == 1) Entonces
+		r <- n1 + n2 
+		operacion <-  'suma'
+	SiNo
+		si(opc == 2) y (n2 <> 0) Entonces
+			r <- n1/n2
+			operacion <- 'Divicion'
+		SiNo
+			Limpiar Pantalla
+			Escribir 'Error divicion entre 0 es invalido'
+		FinSi
+	FinSi
+	Escribir 'El resultado de la ',operacion,'es:',r
+	
+	
+FinAlgoritmo
